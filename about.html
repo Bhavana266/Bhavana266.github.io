@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  
+  padding-left:  120px;
+  padding-right: 120px;
+  padding-bottom: 120px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color:rgb(71, 140, 230);
+  color:black;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color:black;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+p {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #333;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width:100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <img src="images\IMG_20170611_131653.jpg" class="img-circle" alt="Website icon" style="float: left;border-radius: 50%;">
+  <h1>About Me Page</h1>
+  <p>Here is some more info about me.Check it out.</p>
+</div>
+
+<h2 style="text-align:center">My Family</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="mother.jpg" alt="Mom" style="width:100%">
+      <div class="container">
+        <h2>Bhavani</h2>
+        <p class="title"> My Mother</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="Father.jpg" alt="Dad" style="width:100%">
+      <div class="container">
+        <h2>Uma Kumar</h2>
+        <p class="title">My Father</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="sis.jpg" alt="sister" style="width:100%">
+      <div class="container">
+        <h2>Monika</h2>
+        <p class="title">My younger sister</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="Family.jpg" alt="Family" style="width:100%">
+      <div class="container">
+        <h2>My Family</h2>
+        <p class="title">My cute little family</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row" style="padding: 30px;">
+  <p><b>MY NAME:</b>Bhavana Tadigadapa</p>
+  <p><b>DATE OF BIRTH :</b>26/06/2002</p>
+  <p><b>AGE :</b>17years</p>
+  <p><b>GENDER :</b>Female</p>
+  <p><b>MOTHER :</b>Bhavani</p>
+  <p><b>OCCUPATION :</b>House Wife</p>
+  <p><b>FATHER :</b>Uma Kumar</p>
+  <p><b>OCCUPATION :</b>Car Servicing</p>
+  <p>And I have a crazy younger sibling. And she is Monika</p>
+</div>
+</body>
+</html>
